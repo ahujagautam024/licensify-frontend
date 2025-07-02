@@ -1,26 +1,9 @@
 import * as React from "react";
-import {
-  AudioWaveform,
-  BadgeCheck,
-  BookOpen,
-  Bot,
-  Command,
-  FileText,
-  Frame,
-  GalleryVerticalEnd,
-  Key,
-  KeyRound,
-  Map,
-  PieChart,
-  RollerCoaster,
-  Settings2,
-  SquareTerminal,
-} from "lucide-react";
+import { FileText, KeyRound, RollerCoaster } from "lucide-react";
 
-import { NavMain } from "@/components/nav-main";
 import { NavProjects } from "@/components/nav-projects";
 import { NavUser } from "@/components/nav-user";
-import { TeamSwitcher } from "@/components/team-switcher";
+
 import {
   Sidebar,
   SidebarContent,

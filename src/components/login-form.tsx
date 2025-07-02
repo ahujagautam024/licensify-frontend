@@ -1,17 +1,17 @@
-import { cn } from "@/lib/utils"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { useAuthStore } from "@/store/useAuthStore"
+import { cn } from "@/lib/utils";
+
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { useAuthStore } from "@/store/useAuthStore";
 
 export function LoginForm({
   className,
   ...props
 }: React.ComponentProps<"form">) {
-  const email = useAuthStore((s) => s.email)
-  const password = useAuthStore((s) => s.password)
-  const setEmail = useAuthStore((s) => s.setEmail)
-  const setPassword = useAuthStore((s) => s.setPassword)
+  const email = useAuthStore((s) => s.email);
+  const password = useAuthStore((s) => s.password);
+  const setEmail = useAuthStore((s) => s.setEmail);
+  const setPassword = useAuthStore((s) => s.setPassword);
   return (
     <form className={cn("flex flex-col gap-6", className)} {...props}>
       <div className="flex flex-col items-center gap-2 text-center">
@@ -46,5 +46,5 @@ export function LoginForm({
         </div>
       </div>
     </form>
-  )
+  );
 }
